@@ -17,6 +17,7 @@ load_dotenv()
 
 app = FastAPI(title="FoodLens API", version="2.1")
 
+# ==================== CORS ====================
 FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
 
 allowed_origins = [FRONTEND_URL]
