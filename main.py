@@ -20,7 +20,6 @@ app = FastAPI(title="FoodLens API", version="2.1")
 FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:5173")
 
 allowed_origins = [FRONTEND_URL]
-
 if FRONTEND_URL.startswith("http://"):
     allowed_origins.append(FRONTEND_URL.replace("http://", "https://"))
 
